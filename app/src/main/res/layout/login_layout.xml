@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgPrimeiro"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="#8EEFFB" />
+
+    <ImageView
+
+        android:id="@+id/imgSegundo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="#006370" />
+
+    <ImageView
+        android:layout_below="@+id/imgQuinto"
+        android:id="@+id/imgTerceiro"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="#00D9F4" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgQuinto"
+        android:id="@+id/imgQuarto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="#099DED" />
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/imgSegundo"
+        android:id="@+id/imgQuinto"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:src="#099DED" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
