@@ -18,6 +18,15 @@
         android:src="@drawable/perfume" />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Essence Legacy"
+        android:layout_marginLeft="115dp"
+        android:fontFamily="cursive"
+        android:textSize="30sp"/>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,6 +73,11 @@
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
 
 
 </LinearLayout>
