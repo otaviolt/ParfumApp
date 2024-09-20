@@ -43,15 +43,19 @@ public class MenuPrincipalActivity extends AppCompatActivity implements View.OnC
     public void onClick(View view) {
         if (view.getId() == R.id.masculino) {
             startActivity(new Intent(getApplicationContext(), PerfumesMasculinosActivity.class));
+            finish();
         }
         if (view.getId() == R.id.feminino) {
             startActivity(new Intent(getApplicationContext(), PerfumesFemininosActivity.class));
+            finish();
         }
         if (view.getId() == R.id.hidratante) {
             startActivity(new Intent(getApplicationContext(), HidratantesActivity.class));
+            finish();
         }
         if (view.getId() == R.id.bodysplash) {
             startActivity(new Intent(getApplicationContext(), BodySplashActivity.class));
+            finish();
         }
 
     }
