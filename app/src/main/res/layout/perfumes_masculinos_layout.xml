@@ -8,14 +8,26 @@
     android:orientation="vertical"
     tools:context=".PerfumesMasculinosActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="sans-serif-black"
-        android:text="Perfumes Masculinos"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idToolBarPerfumeMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            app:navigationIcon="@drawable/baseline_arrow_back"
+            app:title="Perfumes Masculinos"
+            app:titleCentered="true"
+            app:titleTextColor="#673AB7"
+
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <com.google.android.material.tabs.TabLayout
