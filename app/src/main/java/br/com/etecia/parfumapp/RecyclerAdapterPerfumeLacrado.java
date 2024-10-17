@@ -2,6 +2,8 @@ package br.com.etecia.parfumapp;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -25,14 +27,19 @@ public class RecyclerAdapterPerfumeLacrado extends RecyclerView.Adapter<Recycler
         return 0;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         //Criando variável que irá representar o xml no java
         CardView idModeloPerfumeLacrado;
+        ImageView idModeloImagemPerfumeLacrado;
+        TextView idModeloTituloPerfumeLacrado;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             //Apresentando o java para o xml do modelo
             idModeloPerfumeLacrado = itemView.findViewById(R.id.idModeloPerfumeLacrado);
+            idModeloTituloPerfumeLacrado = itemView.findViewById(R.id.idModeloTituloPerfumeLacrado);
+            idModeloImagemPerfumeLacrado = itemView.findViewById(R.id.idModeloImagemPerfumeLacrado);
         }
     }
 
