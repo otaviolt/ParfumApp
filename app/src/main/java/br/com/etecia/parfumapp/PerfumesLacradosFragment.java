@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -30,18 +31,22 @@ public class PerfumesLacradosFragment extends Fragment {
         //carregando os objetos na lista
         lstPerfumeLacrado = new ArrayList<>();
         lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.khamrah));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.invictus));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.ultramale));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.hugoboss));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.heroes));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.black));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.eros));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.phantom));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.azzaro));
-        lstPerfumeLacrado.add(new PerfumeLacrado("Lattafa Khamrah", R.drawable.ani));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Invictus", R.drawable.invictus));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Ultra Male", R.drawable.ultramale));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Hugo Boss", R.drawable.hugoboss));
+        lstPerfumeLacrado.add(new PerfumeLacrado("212 Heroes", R.drawable.heroes));
+        lstPerfumeLacrado.add(new PerfumeLacrado("212 vip Black", R.drawable.black));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Versace Eros", R.drawable.eros));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Phantom", R.drawable.phantom));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Azzaro Most Wanted", R.drawable.azzaro));
+        lstPerfumeLacrado.add(new PerfumeLacrado("Nishane Ani", R.drawable.ani));
 
         //carregando o adaptador
-        RecyclerAdapterPerfumeLacrado adapterPerfumeLacrado = new RecyclerAdapterPerfumeLacrado()
+        RecyclerAdapterPerfumeLacrado adapterPerfumeLacrado = new RecyclerAdapterPerfumeLacrado(getContext(),lstPerfumeLacrado);
+
+        idRecPerfumesLacrados.setLayoutManager(new GridLayoutManager(getContext(),2));
+
+        idRecPerfumesLacrados.setAdapter(adapterPerfumeLacrado);
 
 
         return view;
